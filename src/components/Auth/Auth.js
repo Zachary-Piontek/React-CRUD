@@ -1,7 +1,9 @@
 import { useContext, useState } from 'react';
 import { NavLink, Redirect, useParams } from 'react-router-dom';
 import { UserContext } from '../../context/userContext';
+
 import { userAuth } from '../../services/auth';
+import './auth.css';
 
 export default function Auth() {
   const { type } = useParams();
